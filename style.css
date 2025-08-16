@@ -1,0 +1,89 @@
+/* Apply box-sizing to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Body styles for centering the quiz */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main quiz container box */
+.quiz-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Header section */
+.quiz-header {
+  margin-bottom: 20px;
+}
+
+/* Question styling */
+h2 {
+  margin-bottom: 10px;
+}
+
+/* General button styling */
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  margin: 8px 0;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* Hover effect on buttons */
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Correct answer style */
+.btn.correct {
+  background-color: #28a745;
+}
+
+/* Wrong answer style */
+.btn.wrong {
+  background-color: #dc3545;
+}
+
+/* Next button initially hidden */
+#next-btn {
+  background-color: #17a2b8;
+  display: none;
+}
+
+/* Score text */
+.score {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 600px) {
+  .quiz-container {
+    padding: 20px;
+  }
+
+  .btn {
+    font-size: 15px;
+  }
+}
